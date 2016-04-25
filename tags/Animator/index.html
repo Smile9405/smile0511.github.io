@@ -7,15 +7,13 @@
 
     
 
-    <title>hexo 编写发布博客 | 田星个人博客</title>
+    <title>Animator | 田星个人博客</title>
     <meta name="author" content="imtianx">
-    
-    <meta name="description" content="上一篇 :Hexo+github搭建个人博客我们介绍了博客的搭建过程，这里说明如何编写博客及发布.">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="hexo 编写发布博客"/>
+    
     <meta property="og:site_name" content="Imtianx `s Blog"/>
 
     
@@ -211,103 +209,30 @@
 
     <main>
         <div class="container main-container">
-    <nav class="page-nav hide-on-small-only">
+    
+
+<nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">当前位置（分类目录）</span>
-        
-            
-    
-    
-    <a class="breadcrumb" href="/categories/工具软件/">工具软件</a><a class="breadcrumb" href="/categories/工具软件/hexo/">hexo</a>
-
-
+        <span class="breadcrumb">当前位置（标签）</span>
         
 
+        
+            <a class="breadcrumb" href="/tags/Animator/">Animator</a>
         
     </div>
 </nav>
 
-<article>
-    <div class="card">
-        <div class="card-content">
-            
-
-            <div class="article-title">
-                
-    
-        <h1>hexo 编写发布博客</h1>
-    
 
 
-            </div>
-            <time class="pink-link-context" datetime="2016-04-23T01:27:03.000Z"><a href="/2016/04/23/hexo- write-blog/">2016-04-23</a></time>
-
-            
-    <div class="tags-row">
+    <div class="collection mt-0">
         
-            <a href="/tags/hexo/" class="chip pink lighten-1">hexo</a>
-        
-            <a href="/tags/写博客/" class="chip pink lighten-1">写博客</a>
+            <a href="/2016/04/25/Property-animatorValueAnimator&ObjectAnimation/" class="collection-item grey-text text-darken-1">
+                <time datetime="2016-04-25T11:00:38.000Z">2016-04-25</time>
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                属性动画详解（Animator）
+            </a>
         
     </div>
-
-
-            <div class="toc pink-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#1、编写博客"><span class="section table-of-contents-text">1、编写博客</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#a、使用hexo-命令"><span class="section table-of-contents-text">a、使用hexo 命令</span></a></li><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#b、直接用编辑器编写"><span class="section table-of-contents-text">b、直接用编辑器编写</span></a></li></ol></li></ol></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#2、发布博客"><span class="section table-of-contents-text">2、发布博客</span></a></li></ol>
-</div>
-
-
-            <div class="entry pink-link-context">
-                <p>上一篇 :<a href="http://imtianx.cn/2016/04/20/Hexo+github%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Hexo+github搭建个人博客</a><br>我们介绍了博客的搭建过程，这里说明如何编写博客及发布.<br><a id="more"></a></p>
-<h2 id="1、编写博客"><a href="#1、编写博客" class="headerlink" title="1、编写博客"></a>1、编写博客</h2><ul>
-<li><h5 id="a、使用hexo-命令"><a href="#a、使用hexo-命令" class="headerlink" title="a、使用hexo 命令"></a>a、使用hexo 命令</h5>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] blogName</span><br></pre></td></tr></table></figure>
-<p>  这里layout默认的是 <strong>post</strong>,可以为文章指定标题，日期，分类，标签等，方便博客的管理。其中分类和标签若有多个，可放在“<strong>[ ]</strong>”中，用“<strong>，</strong>”。隔开具体如下：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">	title: &#123;&#123; title &#125;&#125;</span><br><span class="line">	date: &#123;&#123; date &#125;&#125;</span><br><span class="line">	categories: [分类1,子分类]</span><br><span class="line">	tags: [标签1,标签2,]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>需要注意的是是：“<strong>title：</strong>”标签<strong>冒号</strong>后有<strong>空格</strong>，其他的同样。<br>此外，为了界面美观，可以添加 显示”<strong>read more</strong>“,如：只显示第一段，则在第一段后添加：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><h5 id="b、直接用编辑器编写"><a href="#b、直接用编辑器编写" class="headerlink" title="b、直接用编辑器编写"></a>b、直接用编辑器编写</h5><p>  博客的编写支持markdown 语法，个人使用的是<strong>作业部落</strong>的Cmd Markdown 编辑器，非常好用，语法简单，方便，具体用法参见<a href="https://www.zybuluo.com/mdeditor#345522" target="_blank" rel="external">这里</a>。<br>  这种方式需要在写好的文件开头添加<strong>post</strong>文件，方法同上。然后吧写好的文件放到“<strong>_posts</strong>” 文件夹下，如果没有准备发布，作为草稿可以放在“<strong>_data</strong>”文件夹下。</p>
-</li>
-</ul>
-<h2 id="2、发布博客"><a href="#2、发布博客" class="headerlink" title="2、发布博客"></a>2、发布博客</h2><p>打开gitshell 进入博客根目录，生成静态页面：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p>
-<p>然后起动服务就可以在网页上预览了。</p>
-<p>最后就是将页面提交github。</p>
-
-            </div>
-        </div>
-    </div>
-</article>
-
-
-
-
-    <section id="comment">
-        <div class="card">
-            <div class="card-content">
-                <!-- Duoshuo Comment BEGIN -->
-                <div class="ds-thread" data-thread-key="2016/04/23/hexo- write-blog/" data-title="hexo 编写发布博客" data-url="http://imtianx.cn/2016/04/23/hexo- write-blog/"></div>
-
-                <script type="text/javascript">
-                    console.log(document.querySelector('.ds-thread'));
-                    var duoshuoQuery = {
-                        short_name: 'imtianx'
-                    };
-                    (function() {
-                        var ds = document.createElement('script');
-                        ds.type = 'text/javascript';
-                        ds.async = true;
-                        ds.src = (document.location.protocol == 'https:'
-                            ? 'https:'
-                            : 'http:') + '//static.duoshuo.com/embed.js';
-                        ds.charset = 'UTF-8';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-                    })();
-                </script>
-                <!-- Duoshuo Comment END -->
-            </div>
-        </div>
-    </section>
-
 
 
 </div>
